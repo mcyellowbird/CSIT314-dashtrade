@@ -9,12 +9,16 @@
     border-radius: 10px;
     display: flex;
     flex-flow: column;
-    width: 90vw;
+    width: 90%;
 }
 
 .serviceRow {
     display: flex;
     flex-flow: row;
+}
+
+.serviceRow > div > p {
+    font-size: 20px;
 }
 
 /* MAKE FIT SHIT PROPERLY PLEASE THANK YOU SIGNED.*/
@@ -23,13 +27,19 @@
     height: 25vmin;
     border: 1px solid black;
     border-radius: 10px;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-top: 25px;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.serviceRow > div:last-child {
+    width: 25vmin;
+    height: 25vmin;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-right: 2%;
 }
 
 .serviceRow:last-child > div {
-    margin-top: 25px;
-    margin-left: 25px;
     margin-bottom: 25px;
 }

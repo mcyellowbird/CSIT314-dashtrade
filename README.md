@@ -11,4 +11,4 @@ CSIT314 Group Project Website
 | Ryan | Project Scheduling / Management |
 | Brandon | Documentation |
 | Rijul | Frontend |
-| Adrian | All-rounder  t|
+| Adrian | All-rounder  t |

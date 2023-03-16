@@ -1,0 +1,35 @@
+.siteName {
+    text-align: center;
+    font-size: 50px;
+}
+
+.serviceContainer {
+    margin: auto;
+    border: 1px solid #797979;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    width: 90vw;
+}
+
+.serviceRow {
+    display: flex;
+    flex-flow: row;
+}
+
+/* MAKE FIT SHIT PROPERLY PLEASE THANK YOU SIGNED.*/
+.serviceRow > div {
+    width: 25vmin;
+    height: 25vmin;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.serviceRow:last-child > div {
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}

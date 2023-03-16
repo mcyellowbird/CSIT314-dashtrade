@@ -15,10 +15,14 @@ function generateTradies() {
 	}
 }
 
+// Global variables used in the populateTradies function to allow the setTimeout function to work
+var i = 0;
+var count = 0;
+var rowCount = 1;
+
 function populateTradies() {
-    var count = 0;
-    var rowCount = 1;
-    for (var i = 0; i < tradies.length; i++){
+    setTimeout(function() {
+    if (i < tradies.length){
         if (count >= 6){
             count = 0;
             rowCount++;
@@ -41,6 +45,11 @@ function populateTradies() {
         
         var nextRow = document.getElementById("services").children[rowCount-1]; // change to services then add rows dynamically
         nextRow.appendChild(newDiv);
+        
         count++;
-    }
+        i++;
+        if (i < tradies.length){
+            populateTradies();
+        }
+    }}, 40)
 }

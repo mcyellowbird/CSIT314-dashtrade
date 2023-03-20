@@ -1,7 +1,7 @@
 var tradieNames = ["Eliana Peters", "Patrick Bates", "Madilyn Castaneda", "Collin Rodgers", "Selah Juarez", "Joaquin Mason", "Sienna Powers", "Sean Curry", "Alison Zuniga", "Sincere Arellano", "Faye Galvan", "Kingsley Bender", "Lilyana Castaneda", "Collin Gomez", "Natalie Huerta", "Douglas Yoder", "Emerie Lugo", "Santos Macias", "Adley Sawyer", "Jefferson Vasquez"];
 
 var tradies = [];
-var serviceType = ["Roof Cleaning"];
+var serviceType = ["Electrical, Plumbing, Carpenting"];
 
 function generateTradies() {
     for (var i = 0; i < 20; i++){
@@ -21,7 +21,6 @@ var count = 0;
 var rowCount = 1;
 
 function populateTradies() {
-    setTimeout(function() {
     if (i < tradies.length){
         if (count >= 6){
             count = 0;
@@ -51,5 +50,5 @@ function populateTradies() {
         if (i < tradies.length){
             populateTradies();
         }
-    }}, 40)
+    }
 }

@@ -71,6 +71,7 @@ function populateTradies(){
         var newCompanyName = document.createElement('h3');
         var newButton = document.createElement('button');
 
+        newTD.classList.add("CompanyTD");
         newIMG.src = "public/vite.svg";
         newCompanyName.innerText = tradies[i].name;
         newButton.textContent = "View";

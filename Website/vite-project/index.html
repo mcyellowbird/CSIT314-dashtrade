@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <title>DashTrade</title>
     <link rel="stylesheet" href="style.css">
+    <script src="generateData.js"></script>
   </head>
-  <body>
+  <body onload="generateTradies(); populateTradies();">
     <header class="navbar">
       <a class="navbar-logo" href="#">DashTrade</a>
       <nav class="navbar-links">
@@ -25,8 +26,8 @@
       <h1 class = "rowTitle">Electrical</h1>
       <div>
         <table id="companyList" >
-          <tr>
-            <td class = "CompanyTD" id="specificCompany">
+          <tr id="electricalList">
+            <!-- <td class = "CompanyTD" id="specificCompany">
               <img src="public/vite.svg">
               <h3>Company Name</h3>
               <button class="button">View</button>
@@ -54,15 +55,15 @@
             <td class = "CompanyTD"  class="arrowData" >
               <span style="font-size: 50px;">&#8594;</span>
               <p>View more services</p>
-            </td>
+            </td> -->
           </tr>
         </table>
       </div>
       <h1 class = "rowTitle">Plumbing</h1>
       
       <table>
-        <tr>
-          <td class = "CompanyTD"  id="specificCompany">
+        <tr id="plumbingList">
+          <!-- <td class = "CompanyTD"  id="specificCompany">
             <img src="public/vite.svg">
             <h3>Company Name</h3>
             <button class="button">View</button>
@@ -90,15 +91,15 @@
           <td class = "CompanyTD"  class="arrowData">
             <span style="font-size: 50px;">&#8594;</span>
             <p>View more services</p>
-          </td>
+          </td> -->
         </tr>
       </table>
 
       <h1 class = "rowTitle">Carpenting</h1>
       
       <table>
-        <tr>
-          <td class = "CompanyTD"  id="specificCompany">
+        <tr id="carpentingList">
+          <!-- <td class = "CompanyTD"  id="specificCompany">
             <img src="public/vite.svg">
             <h3>Company Name</h3>
             <button class="button">View</button>
@@ -126,7 +127,7 @@
           <td class = "CompanyTD"  class="arrowData" >
             <span style="font-size: 50px;">&#8594;</span>
             <p>View more services</p>
-          </td>
+          </td> -->
         </tr>
       </table>
 

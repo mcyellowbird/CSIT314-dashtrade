@@ -72,6 +72,7 @@ p {
 .button:hover {
   background-color: var(--primary-color);
   color: var(--accent-color);
+  cursor: pointer;
 }
 
 .memberButton:hover {
@@ -160,7 +161,7 @@ table {
   width: 8px;
 }
 
-th, td {
+th, .CompanyTD {
   padding: 12px 15px;
   text-align: center;
   border: 1px solid lightgray;
@@ -172,7 +173,7 @@ th, td {
   transition: all .5s linear;
 }
 
-td:hover {
+.CompanyTD:hover {
   background-color: white;
   box-shadow: 1px 1px 5px var(--secondary-color);
   border-radius: 10px;
@@ -228,6 +229,45 @@ td:hover {
   padding: 5px;
 }
 
+.CDTtableScroll{
+  height: 500px; 
+  overflow-y: auto;
+}
+
+.clientDetailsTable{
+  margin: auto;
+  width: 75%;
+  border-spacing: 10px;
+  border: 10px;
+  margin: 1px auto auto auto;
+  border-spacing: 30px;
+  border-color: whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: inset 0 0 10px 10px white;
+  padding: 10px;
+  
+}
+
+.CDTrow{
+  height: 30px;
+  border: 1px solid lightgray;
+  border: 10px;
+}
+
+.CDTdata{
+  position: relative;
+}
+
+.clientDetailsTable:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
+}
+
+.CDTdata:hover{
+  cursor: pointer;
+}
+
 .reviewText{
   font-weight: 10px;
 }
@@ -246,3 +286,49 @@ footer{
   font-size: 14px;
   box-shadow: inset 0 0 10px 10px white;
 }
+
+/* Search filter box */
+.search-box {
+  display: flex;
+  align-items: left;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
+}
+
+.search-box input[type="text"] {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  color: var(--primary-color);
+}
+
+.search-box button[type="submit"] {
+  padding: 9px 20px;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: var(--accent-color);
+  background-color: var(--secondary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.search-box button[type="submit"]:hover {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+
+
+

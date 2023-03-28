@@ -1,0 +1,11 @@
+{
+  "userID": {
+    "first-name": {},
+    "last-name": {},
+    "phone-number": {},
+    "email": {},
+    "password": {},
+    "completed-jobs": [],
+    "active-jobs": []
+  }
+}

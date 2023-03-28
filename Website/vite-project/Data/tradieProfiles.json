@@ -2,6 +2,7 @@
   "tradieID": {
     "first-name": {},
     "last-name": {},
-    "completed-jobs": []
+    "completed-jobs": [],
+    "location": {}
   }
 }

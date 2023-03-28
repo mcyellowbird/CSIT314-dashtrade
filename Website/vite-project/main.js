@@ -79,3 +79,18 @@ function populateTradies(){
         }
     }
 }
+testURL();
+// Test Function for passing data through URL
+function testURL(){
+    var data = {
+        thing: 'something here',
+        otherThing: [{ name: 'zoo', size: 1 }, { name: 'far', size: 9001 }]
+    };
+
+    var dataString = JSON.stringify(data);
+    var dataStringBase64 = window.btoa(dataString); // (optional)
+    var dataStringBase64Safe = encodeURIComponent(dataStringBase64);
+
+    var url = 'urlTest.html?data=' + dataStringBase64Safe;
+    window.open(url, '_self');
+}

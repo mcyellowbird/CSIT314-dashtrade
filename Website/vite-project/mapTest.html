@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 750px;
+        width: 1000px;
+       }
+    </style>
+  </head>
+  <body onload="initMap();">
+    <!--The div elements for the map and message -->
+    <div id="map"></div>
+    <!--Load the API from the specified URL -- remember to replace YOUR_API_KEY-->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4GyFLMUwFO6lZRmhID23XUHxyW81gFeE&callback=initMap">
+    </script>
+    <script>
+//        // Initialize and add the map
+//        var map;
+//        function initMap() {
+//          // The map, centered on Central Park
+//          const center = {lat: 40.774102, lng: -73.971734};
+//          const options = {zoom: 15, scaleControl: true, center: center};
+//          map = new google.maps.Map(
+//              document.getElementById('map'), options);
+//          // Locations of landmarks
+//          const dakota = {lat: 40.7767644, lng: -73.9761399};
+//          const frick = {lat: 40.771209, lng: -73.9673991};
+//          // The markers for The Dakota and The Frick Collection
+//          var mk1 = new google.maps.Marker({position: dakota, map: map});
+//          var mk2 = new google.maps.Marker({position: frick, map: map});
+//        }
+        
+        var map;
+
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {
+              lat: -34.425073,
+              lng: 150.893149
+            },
+            zoom: 14
+          });
+//          randomBetween();
+        }
+
+        function randomBetween() {
+          var random = new google.maps.LatLng((Math.random() * (85 * 2) - 85), (Math.random() * (180 * 2) - 180));
+          var marker = new google.maps.Marker({
+            map: map,
+            position: random
+          });
+          map.setCenter(marker.getPosition());
+        }
+    </script>
+  </body>
+</html>
+

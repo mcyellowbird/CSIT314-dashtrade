@@ -1,8 +1,12 @@
+// List of Tradie Names
 var tradieNames = ["Eliana Peters", "Patrick Bates", "Madilyn Castaneda", "Collin Rodgers", "Selah Juarez", "Joaquin Mason", "Sienna Powers", "Sean Curry", "Alison Zuniga", "Sincere Arellano", "Faye Galvan", "Kingsley Bender", "Lilyana Castaneda", "Collin Gomez", "Natalie Huerta", "Douglas Yoder", "Emerie Lugo", "Santos Macias", "Adley Sawyer", "Jefferson Vasquez"];
 
+// Array to store tradies
 var tradies = [];
+// List of Service Types
 var serviceType = ["Electrical", "Plumbing", "Carpenting"];
 
+// Function to generate objects to store tradie information
 function generateTradies() {
     for (var i = 0; i < 20; i++){
 		var newTradie = {};
@@ -20,37 +24,7 @@ function generateTradies() {
     return tradies;
 }
 
+// To-Do: Store tradie data locally
 
 
-/*function populateTradies() {
-    if (i < tradies.length){
-        if (count >= 6){
-            count = 0;
-            rowCount++;
-            var newRow = document.createElement("div");
-            newRow.classList.add("serviceRow");
-            document.getElementById("services").appendChild(newRow);
-        }
-        var tradie = tradies[i];
-        
-        var newDiv = document.createElement("div");
-		newDiv.classList.add("service");
-        
-        var newService = "";
-        newService += "<p>" + tradie.name + "</p>";
-        newService += "<p>" + tradie.distance + "</p>";
-        newService += "<p>" + tradie.type + "</p>";
-        newService += "<input type='button'>";
-        
-        newDiv.innerHTML = newService;
-        
-        var nextRow = document.getElementById("services").children[rowCount-1]; // change to services then add rows dynamically
-        nextRow.appendChild(newDiv);
-        
-        count++;
-        i++;
-        if (i < tradies.length){
-            populateTradies();
-        }
-    }
-}*/
+// To-Do: Generate random service requests

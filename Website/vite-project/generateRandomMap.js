@@ -1,6 +1,7 @@
 var map;
 var address = "";
 
+// Function to initialize the map with some default values
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: {
@@ -13,7 +14,9 @@ function initMap() {
  randomBetween();
 }
 
+// Function to generate random latitude and longitude, then convert that to an address
 function randomBetween() {
+    // Setting limits to create a box around wollongong
   var southWest = new google.maps.LatLng(-34.437578, 150.842202);
   var northEast = new google.maps.LatLng(-34.414922, 150.900957);
   var lngSpan = northEast.lng() - southWest.lng();
@@ -21,28 +24,8 @@ function randomBetween() {
 
   var myLatlng = new google.maps.LatLng(-34.425073, 150.893149);
 
-//   var map = new google.maps.Map(document.getElementById("map"), {
-//       zoom: 14,
-//       center: myLatlng,
-//       zoomControl: true,
-//       mapTypeControl: false,
-//       scaleControl: true,
-//       streetViewControl: false,
-//       rotateControl: false,
-//       fullscreenControl: false,
-//       mapTypeId: google.maps.MapTypeId.ROADMAP
-//   });
-
-
   var randLat = southWest.lat() + latSpan * Math.random();
   var randLong = southWest.lng() + lngSpan * Math.random();
-//   var location = new google.maps.LatLng(randLat, randLong);
-//   var marker = new google.maps.Marker({
-//       position: location,
-//       map: map
-//   });
-
-//   map.center = location;
 
   
   // Reverse Geocoding (Long & Lat to Address, i.e. address lookup)
@@ -52,6 +35,8 @@ function randomBetween() {
     lat: parseFloat(randLat),
     lng: parseFloat(randLong)
   };
+    // Variable to return address
+    var address;
 
   geocoder
     .geocode({location: latlng})
@@ -59,6 +44,8 @@ function randomBetween() {
         if (response.results[0]) {
             document.getElementById("address").innerHTML = response.results[0].formatted_address;
             moveMarker(response.results[0].formatted_address);
+            
+            return response.results[0].formatted_address;
         } else{
             window.alert("No results found");
         }

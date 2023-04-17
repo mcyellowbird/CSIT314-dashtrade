@@ -1,7 +1,10 @@
+// To-Do: Store logged in user
 //var activeAccount = JSON;
 
+// Array to store tradies
 var tradies = [];
 
+// Function to return generated tradie information and then populate those tradies on the web page
 function initializeData(){
     tradies = generateTradies();
     populateTradies();
@@ -13,18 +16,20 @@ var eCount = 0;
 var pCount = 0;
 var cCount = 0;
 
+// Function to populate tradie information on the web page
 function populateTradies(){
     for (var i = 0; i < tradies.length; i++){
         /*var newTD = '<td><img src="public/vite.svg"><h3>';
         newTD += tradies[i].name;
         newTD += '</h3><button class="button">View</button></td>';*/
 
-        // New Data
+        // Creating New Elements
         var newTD = document.createElement('td');
         var newIMG = document.createElement('img');
         var newCompanyName = document.createElement('h3');
         var newButton = document.createElement('button');
 
+        // Setting Data Procedurally
         newTD.classList.add("CompanyTD");
         newIMG.src = "public/vite.svg";
         newCompanyName.innerText = tradies[i].name;
@@ -49,7 +54,7 @@ function populateTradies(){
         mSTD.appendChild(mSpan);
         mSTD.appendChild(mP);
 
-        // Adding New Data to each section
+        // Adding New Data to each section by service type
         if (tradies[i].serviceType = "Electrical" && eCount < 5){
             var row = document.getElementById("electricalList");
             row.appendChild(newTD);

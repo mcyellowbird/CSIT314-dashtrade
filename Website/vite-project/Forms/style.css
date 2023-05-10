@@ -483,7 +483,7 @@ hr{
   font-weight: bold;
   padding: 15px;
   transition: background-color 0.5s ease-in-out;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  
 
 }
 
@@ -503,7 +503,8 @@ hr{
   transition: max-height 0.5s ease-in-out, background-color 0.5s ease-in-out; /* Add this line */
   text-align: left;
   padding: 5px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  
+  
 }
 
 .faq.open .answer {
@@ -550,4 +551,35 @@ hr{
   background-color: var(--primary-color);
   border: 1px solid var(--primary-color);
   cursor: pointer;
+}
+
+.faq .UnBehaAnswer{
+  background-color: var(--accent-color);
+  color: var(--accent-color);
+  font-size: 18px;
+  line-height: 1.5;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, background-color 0.5s ease-in-out; /* Add this line */
+  text-align: left;
+  padding: 5px;
+} 
+
+.faq.open .UnBehaAnswer{
+  background-color: var(--primary-color);
+  max-height: 1000px;
+  color: var(--accent-color);
+}
+
+.gridTable{
+  border: 1px solid var(--primary-color);
+  width: 500px;
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+.gridTable tr{
+  border: 1px solid var(--primary-color);
 }

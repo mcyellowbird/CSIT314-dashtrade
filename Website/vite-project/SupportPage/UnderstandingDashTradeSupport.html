@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DashTrade: Understanding DashTrade</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="generateData.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <a class="navbar-logo" href="#">DashTrade</a>
+      <nav class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="TradieView.html">Services</a>
+        <a href="AboutUs.html">About</a>
+        <a href="ContactUs.html">Support</a>
+        <a href="ClientAccountView.html">Account</a>
+        
+      </nav>
+    </header>
+    <main>
+        <p style = "margin-left: 30px;"><a href="./vite-project/ContactUs.html">Support Page</a> > <a href="UnderstandingDashTradeSupport.html">Understanding DashTrade</a></p>
+        <h2 style = "text-align: left; font-size: 45px; margin-left: 40px; margin-top: 70px;" >Understanding DashTrade</h2>
+
+        <div class="faq">
+            <div class="question">What is DashTrade?</div>
+            <div class="answer">DashTrade is a reputable community platform that links those who need to outsource chores and discover local services with others who want to earn money and are willing to work. <br><br>
+
+                Tell us what you need done, receive bids from reputable tradespeople in minutes, and select the best individual for the job. <br><br>
+                
+                DashTrade can assist you with easy to complex home and handyman projects such as carpentry, plumbing, electrical, metalworking, landscaping, and more!
+
+                You can find more information about us at our <a href="/vite-project/AboutUs.html">About Us</a> Page.
+            
+            </div>
+          </div>
+    
+          <div class="faq">
+            <div class="question">Who and What is a Tradesman?</div>
+            <div class="answer">A Tradesman is someone who can do jobs on the DashTrade platform for others. They are an independent contractor who manages member accounts in the same way as Customers and members do on the platform.<br><br>
+
+                If you wish to be a Tradesman, simply register a Tradesman account and begin browsing through assignments that you may perform. Keep in mind that you must be over the age of 18 and have local working privileges. Check out our Community Guidelines for additional details. You may also build a listing to show off your expertise to potential customers. <br><br>
+                
+                Once you've signed up, you may make offers on projects by explaining to customers and members why you're the ideal person for the job. If you are assigned a task, you can initiate a private message conversation with the Poster to discuss the details of performing the work. 
+                
+                
+                </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">What type of tasks can I get done on DashTrade?</div>
+            <div class="answer">DashTrade can assist you with easy to complex home and handyman services such as carpentry, landscaping, metalworking, plumbing, electrical, and more!<br><br>
+
+                It is free to post a task, so simply explain the activity you want done, specify a budget, and you will begin to receive proposals or quotations from Tradesman.<br><br>
+                
+                
+                Browse through the task recommendations to discover the many categories in which you may propose assignments. <br><br>
+                
+                When submitting a task, you must follow the Task submitting Guidelines under the Community Guidelines to provide a safe, courteous, and rewarding environment. 
+                
+                
+                </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">Is DashTrade Available in my Country?</div>
+            <div class="answer"> 
+                DashTrade is only accessible in Australia.<br><br>
+                
+                Please keep in mind that you may only publish tasks in the country in which you presently reside (international tasks are not currently enabled). You must be in the same nation and have local working privileges if you are executing jobs. Both of these requirements are met by remote tasks. <br><br>
+
+
+                We will make a public notice if we decide to expand into other countries or amend the aforesaid requirements.
+
+                
+                </div>
+          </div>
+          
+          
+    
+          <script>
+            const faqs = document.querySelectorAll('.faq');
+        
+            faqs.forEach(faq => {
+              const question = faq.querySelector('.question');
+              const answer = faq.querySelector('.answer');
+        
+              question.addEventListener('click', () => {
+                faq.classList.toggle('open');
+              });
+            });
+          </script>
+        
+    </main>
+  </body>
+</html>

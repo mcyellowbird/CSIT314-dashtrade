@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DashTrade: Insurance</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="generateData.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <a class="navbar-logo" href="#">DashTrade</a>
+      <nav class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="TradieView.html">Services</a>
+        <a href="AboutUs.html">About</a>
+        <a href="ContactUs.html">Support</a>
+        <a href="ClientAccountView.html">Account</a>
+        
+      </nav>
+    </header>
+        <main>
+            <p style = "margin-left: 30px;"><a href="./vite-project/ContactUs.html">Support Page</a> > <a href="InsuranceSupport.html">Insurance</a></p>
+            <h2 style = "text-align: left; font-size: 45px; margin-left: 40px; margin-top: 70px;" >Insurance</h2>
+            
+            <div class="faq">
+                <div class="question">How does Third Party Liability Insurance work on DashTrade for a Customer?</div>
+                <div class="UnBehaAnswer">
+                    You, as a customer, have hired a Tradesman (an independent contractor) to execute your assignment on the DashTrade platform. The Tradesman is responsible for the job performed and is thus liable for the consequences of their actions while completing the Task.<br><br>
+
+                    DashTrade general liability insurance protects tradespeople against third-party responsibility for personal injury or property damage when executing tasks that are not otherwise excluded. <br><br>
+                    
+                    This insurance only covers a tradesman's responsibility for property damage or injury caused by non-excluded activities and does not cover poor workmanship.  Before accepting an offer, customers/posters should enquire about the Tradesman's workmanship standards and any insurance coverage.
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="question">How does Third Party Liability Insurance work on DashTrade for a Tradesman?</div>
+                <div class="UnBehaAnswer">
+                    DashTrade has general liability insurance that includes tradespeople. Tradespeople are protected for third-party responsibility for bodily injury or property damage when performing activities (unless expressly excluded).<br><br>
+
+                    DTrade Insurance Company (DTIC) provides this $10 million AUD liability insurance.<br><br>
+ 
+                    The liability insurance operates on the basis of claims made and notified. When you are alerted and file a claim, the terms and conditions in effect on that day will apply to your claim, not those in effect prior to that date.<br><br>
+
+                    Claims must be filed within 30 calendar days of the occurrence date.<br><br>
+
+                    As a Tradesman, please keep in mind that, as an independent contractor, you are still primarily responsible for any physical harm or damage you cause to third parties - so please use caution when executing assignments.<br><br>
+
+                    All coverage is subject to the terms and conditions of the insurance, and there are certain exclusions. Please ensure that you are aware of the specifics, including whether the work you are going to conduct is insured, as a Tradesman.
+
+                </div>
+            </div>
+
+            </br>
+            </br>
+            </br>
+            </br>
+    
+            <footer>
+                <span>All rights reserved</span></br>
+                <a href="#">Report a technical support issues</a>
+            </footer>
+        
+            <script>
+                const faqs = document.querySelectorAll('.faq');
+            
+                faqs.forEach(faq => {
+                  const question = faq.querySelector('.question');
+                  const answer = faq.querySelector('.answer');
+            
+                  question.addEventListener('click', () => {
+                    faq.classList.toggle('open');
+                  });
+                });
+            </script>
+        </main>
+
+    </body>
+
+</html>

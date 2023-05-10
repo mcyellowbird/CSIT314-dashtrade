@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DashTrade: Insurance</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="generateData.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <a class="navbar-logo" href="#">DashTrade</a>
+      <nav class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="TradieView.html">Services</a>
+        <a href="AboutUs.html">About</a>
+        <a href="ContactUs.html">Support</a>
+        <a href="ClientAccountView.html">Account</a>
+        
+      </nav>
+    </header>
+        <main>
+            <p style = "margin-left: 30px;"><a href="./vite-project/ContactUs.html">Support Page</a> > <a href="/vite-project/SupportPage/ContactUsSupport.html">Contact Us</a> > <a href="AccountForm.html">Account Form</a></p>
+            <h2 style = "text-align: left; font-size: 45px; margin-left: 40px; margin-top: 70px;" >Submit an Account Form</h2>
+
+            <div class="container">
+                <h1>Account Help Request</h1>
+                <form>
+                    <label for="request-type">Request Type</label>
+                    <select id="request-type" name="request-type">
+                        <option value="account-help" selected>Account Help Request</option>
+                        <option value="payment-help">Payment Help Request</option>
+                        <option value="task-help">Task Help Request</option>
+                        <option value="general-help">General Help Request</option>
+                        <br>
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="concern">Select your concern</label>
+                    <select class="form-control" id="concern">
+                      <option>Sign Up/Login Issues</option>
+                      <option>Incorrect Account Settings/Information</option>
+                      <option>Account Deactiviation</option>
+                      <option>Account Restrictions</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="details">Details</label>
+                    <textarea class="form-control" id="details" rows="5" placeholder="Please provide further details"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+
+            </br>
+            </br>
+            </br>
+            </br>
+    
+            <footer>
+                <span>All rights reserved</span></br>
+                <a href="#">Report a technical support issues</a>
+            </footer>
+        
+            <script>
+                const faqs = document.querySelectorAll('.faq');
+            
+                faqs.forEach(faq => {
+                  const question = faq.querySelector('.question');
+                  const answer = faq.querySelector('.answer');
+            
+                  question.addEventListener('click', () => {
+                    faq.classList.toggle('open');
+                  });
+                });
+            </script>
+        </main>
+
+    </body>
+
+</html>

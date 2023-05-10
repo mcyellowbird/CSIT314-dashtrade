@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+  </head>
+    <body onload="generateTradies(); populateTradies();">
+        <header class="navbar">
+        <a class="navbar-logo" href="#">DashTrade</a>
+        <nav class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="TradieView.html">Services</a>
+            <a href="AboutUs.html">About</a>
+            <a href="ContactUs.html">Support</a>
+            <a href="ClientAccountView.html">Account</a>
+            
+        </nav>
+        </header>
+    
+        <main>
+            <div >
+                <table class = "MainBubbleTable">
+                    <tr>
+                        <td>
+                            <h1 style="font-size: 40px;">
+                                We Create an Impact in People's Lives. 
+                            </h1>
+                            <p style = "font-weight: bold;">
+                                Making it possible to link those who are determined to work with others who want a helping hand.
+                            </p>
+                        </td>
+                        <td>
+                            <img style = "height: 250px; width: 250px;"></img>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <table class = "ClearTable">
+                <tr>
+                    <td>
+                        <h1>"The only way to do extraordinary things is to love the little things."</h1>
+                    </td>
+                    <td>
+                        <h2>The DashTrade Experience</h2>
+
+                        <p>
+                            DashTrade is a reputable community platform that links those who need to outsource chores and discover local services with others who want to earn money and are willing to work. </br></br>
+
+                            DashTrade can assist you with everything from house cleaning to handyman services, admin work, photography, graphic design, and even website development.</br></br>
+                            
+                            DashTrade will take you from 'things to do' to 'everything's done' if you go online or download the app.</br></br>
+                            
+                            DashTrade. Accomplish more for your lifestyle.</p>
+                    </td>
+                </tr>
+            </table>
+
+            <div>
+                <table class = "TickTable">
+                    <tr class = "tickTableRow">
+                        <td class = "tickTableData">
+                            <h3 class = "tickText">Providing help</br> around Australia</h3>
+                            <img style = "float: right;" src = "public/tickMark.png">
+                        </td >
+                        <td class = "tickTableData">
+                            <h3 class = "tickText">Opening more</br> jobs</h3>
+                            <img style = "float: right;" src = "public/tickMark.png">
+                        </td >
+                        <td class = "tickTableData">
+                            
+                            <h3 class = "tickText">Aiming for a better Future
+                            with you</h3>
+                            <img style = "float: right;" src = "public/tickMark.png">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="faq">
+                <div class="question">What is DashTrade?</div>
+                <div class="answer">DashTrade is a unique online platform that connects clients and traders. Our website is meant to help clients identify the proper craftsman for their specific assignment, such as plumbing and electrical services, as well as painting and building. Our mission is to make it easier to discover trustworthy tradespeople, and we accomplish this by properly screening and authenticating all tradespeople on our platform. Clients may save time and money by connecting with qualified tradespeople quickly and effortlessly, with the confidence that they are working with trustworthy specialists, by utilising DashTrade.</div>
+            </div>
+
+            <div class="faq">
+                <div class="question">Who will I be Working with?</div>
+                <div class="answer">It's entirely up to you! When looking through tasks, you can look at profiles, reviews, and recommendations to see who you'll be working with.</div>
+            </div>
+
+            <div class="faq">
+                <div class="question">How much does it Cost?</div>
+                <div class="answer">The Total cost of the task will be depended on the chosen company. Following completion of the task, a Service Fee will be deducted from the agreed-upon offer price to cover all Insurance, Handling, and Transaction costs. There are no additional fees or charges.</div>
+            </div>
+
+            <div class="faq">
+                <div class="question">Is there Insurance?</div>
+                <div class="answer">The DashTrade Insurance Policy from our Insurance business, subject to all policy terms and restrictions, covers the client for their responsibility to third parties for bodily injury or property damage when doing particular job activities.</div>
+            </div>
+
+              <script>
+                const faqs = document.querySelectorAll('.faq');
+          
+                faqs.forEach(faq => {
+                  const question = faq.querySelector('.question');
+                  const answer = faq.querySelector('.answer');
+          
+                  question.addEventListener('click', () => {
+                    faq.classList.toggle('open');
+                  });
+                });
+              </script>
+        </main>
+
+        </br>
+        </br>
+        </br>
+        </br>
+        
+        <footer>
+            <span>All rights reserved</span></br>
+            <a href="#">Report a technical support issues</a>
+        </footer>
+
+    </body>
+</html>

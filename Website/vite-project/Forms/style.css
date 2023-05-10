@@ -500,7 +500,7 @@ hr{
   line-height: 1.5;
   max-height: 0px;
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out, background-color 0.5s ease-in-out; /* Add this line */
+  transition: max-height 0.5s ease-in-out, background-color 0.5s ease-in-out; 
   text-align: left;
   padding: 5px;
   
@@ -582,4 +582,83 @@ hr{
 
 .gridTable tr{
   border: 1px solid var(--primary-color);
+}
+
+/*request form*/
+.request-form {
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+  width: 80%;
+  margin-left: 150px;
+}
+
+.request-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.request-form select,
+.request-form textarea,
+.request-form input[type="text"],
+.request-form input[type="email"],
+.request-form input[type="tel"],
+.request-form input[type="number"] {
+  width: 99%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.request-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7.41,8.59L12,13.17l4.59-4.58L18,10l-6,6l-6-6L7.41,8.59z'/%3E%3C/svg%3E");
+  background-position: calc(100% - 10px) center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-right: 40px;
+}
+
+.request-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.request-form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.request-form .form-check-label {
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+.request-form .input-group-text {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: #fff;
+}
+
+.request-form .btn-primary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.request-form .btn-primary:hover,
+.request-form .btn-primary:focus,
+.request-form .btn-primary:active {
+  background-color: #ff9400;
+  border-color: #ff9400;
+}
+
+.request-form .form-check-input:checked + .form-check-label {
+  font-weight: 500;
 }

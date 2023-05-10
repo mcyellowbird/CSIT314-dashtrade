@@ -500,7 +500,7 @@ hr{
   line-height: 1.5;
   max-height: 0px;
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out, background-color 0.5s ease-in-out; /* Add this line */
+  transition: max-height 0.5s ease-in-out, background-color 0.5s ease-in-out; 
   text-align: left;
   padding: 5px;
   

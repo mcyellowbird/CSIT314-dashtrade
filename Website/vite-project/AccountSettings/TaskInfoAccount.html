@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DashTrade: Account Settings</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="generateData.js"></script>
+  </head>
+  <body>
+    <div class="nav-container">
+        <header class="navbar">
+          <a class="navbar-logo" href="#">DashTrade</a>
+          <nav class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="TradieView.html">Services</a>
+            <a href="AboutUs.html">About</a>
+            <a href="ContactUs.html">Support</a>
+            <a href="ClientAccountView.html">Account</a>
+          </nav>
+        </header>
+        <header class="Accountnavbar">
+            <nav class="Accountnavbar-links">
+              <div class="button-container">
+                <a href="OverviewAccount.html" class="button-link">
+                  <div class="button">
+                    <span>Overview</span>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="button-container">
+                <a href="ProfileAccount.html" class="button-link">
+                  <div class="button">
+                    <span>Profile Info</span>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="button-container">
+                <a href="PaymentAccount.html" class="button-link">
+                  <div class="button">
+                    <span>Payment Methods</span>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="button-container">
+                <a href="TaskInfoAccount.html" class="button-link">
+                  <div class="button">
+                    <span>Task Info</span>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="button-container">
+                <a href="SecurityAccount.html" class="button-link">
+                  <div class="button">
+                    <span>Security</span>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                </a>
+              </div>
+            </nav>
+          </header>
+        
+    </div>
+    
+    <main>
+        <h2 style = "text-align: center; font-size: 30px; margin-left: 40px; margin-top: 60px;" >Task Info</h2>
+        
+        <section class="section">
+            <div class="section-title">Current Tasks</div>
+            <div class="section-content">
+              <div id="current-tasks-container">
+                <!-- Display current tasks -->
+                <!-- Example current task -->
+                <div class="current-task">
+                  <span class="task-type">Plumbing</span><br>
+                  <span class="task-date">Date Created: 16/2/12</span><br>
+                  <span class="task-company">Tradesman / Company: Billy Tradies</span><br>
+                  <button class="view-details" onclick="viewTaskDetails('current-task-details-1')">View Details</button>
+                </div>
+                <!-- Add more current tasks here -->
+              </div>
+              
+              <!-- Display message if no current tasks -->
+              <div id="no-current-tasks" style="display: none;">
+                <span>You currently have no requested tasks</span>
+              </div>
+            </div>
+          </section>
+          
+          <section class="section">
+            <div class="section-title">Task History</div>
+            <div class="section-content">
+              <div id="task-history-container">
+                <!-- Display completed tasks -->
+                <!-- Example completed task -->
+                <div class="completed-task">
+                  <button class="toggle-details" onclick="toggleTaskDetails('completed-task-details-1')">
+                    <span class="task-type">Carpentry</span>
+                    <span class="task-date">10/11/22</span>
+                  </button>
+                  <div id="completed-task-details-1" class="task-details" style="display: none;">
+                    <span class="task-id">Task ID: #12312312</span>
+                    <span class="task-company">Tradesman / Company: Billy's Tradies</span>
+                    <span class="task-date">Date Created: 10/11/22</span>
+                    <span class="task-price">Total Price: $12300</span>
+                  </div>
+                </div>
+                <div class="completed-task">
+                    <button class="toggle-details" onclick="toggleTaskDetails('completed-task-details-1')">
+                      <span class="task-type">Carpentry</span>
+                      <span class="task-date">10/11/22</span>
+                    </button>
+                    <div id="completed-task-details-1" class="task-details" style="display: none;">
+                      <span class="task-id">Task ID: #12312312</span>
+                      <span class="task-company">Tradesman / Company: Billy's Tradies</span>
+                      <span class="task-date">Date Created: 10/11/22</span>
+                      <span class="task-price">Total Price: $12300</span>
+                    </div>
+                  </div>
+                <!-- Add more completed tasks here -->
+              </div>
+            </div>
+          </section>
+          
+        
+        </br>
+        </br>
+        </br>
+        </br>
+    
+        <footer>
+            <span>All rights reserved</span></br>
+            <a href="#">Report a technical support issues</a>
+        </footer>
+
+	<script>
+// Function to toggle task details visibility
+function toggleTaskDetails(taskDetailsId) {
+  var taskDetails = document.getElementById(taskDetailsId);
+  taskDetails.style.display = taskDetails.style.display === "none" ? "block" : "none";
+}
+	</script>
+
+        
+    </main>
+
+    </body>
+
+</html>

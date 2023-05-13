@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DashTrade: Account Settings</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="generateData.js"></script>
+  </head>
+  <body>
+    <div class="nav-container">
+        <header class="navbar">
+          <a class="navbar-logo" href="#">DashTrade</a>
+          <nav class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="TradieView.html">Services</a>
+            <a href="AboutUs.html">About</a>
+            <a href="ContactUs.html">Support</a>
+            <a href="ClientAccountView.html">Account</a>
+          </nav>
+        </header>
+        <header class="Accountnavbar">
+            <nav class="Accountnavbar-links">
+              <div class="button-container">
+                <a href="OverviewAccount.html" class="button-link">
+                  <div class="button">
+                    <span>Overview</span>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="button-container">
+                <a href="ProfileAccount.html" class="button-link">
+                  <div class="button">
+                    <span>Profile Info</span>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="button-container">
+                <a href="PaymentAccount.html" class="button-link">
+                  <div class="button">
+                    <span>Payment Methods</span>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="button-container">
+                <a href="TaskInfoAccount.html" class="button-link">
+                  <div class="button">
+                    <span>Task Info</span>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="button-container">
+                <a href="SecurityAccount.html" class="button-link">
+                  <div class="button">
+                    <span>Security</span>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                </a>
+              </div>
+            </nav>
+          </header>
+        
+    </div>
+    
+    <main>
+        <h2 style = "text-align: center; font-size: 30px; margin-left: 40px; margin-top: 60px;" >Security</h2>
+        
+<section class="section">
+  <div class="section-title">Email:</div>
+  <div class="section-content">
+    <span id="change-email" style="margin-right: 10px;">••••••@••••••.com</span>
+    <button class="link edit-btn" onclick="openEditModal('change-email')">Change Email</button>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-title">Password:</div>
+  <div class="section-content">
+    <span id="change-pw" style="margin-right: 10px;">••••••••••••••••••••••••</span>
+    <button class="link edit-btn" onclick="openEditModal('change-pw')">Change Password</button>
+  </div>
+</section>
+
+<div id="edit-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 style=" margin-bottom: 20px;">Edit Information</h2>
+    <label for="edit-input" style="font-size: 16px; color: #4d4d4d;">New Value:</label>
+    <input type="text" id="edit-input" style="padding: 10px; border: none; border-radius: 5px; background-color: #f2f2f2; margin-bottom: 20px;">
+    <div style="display: flex; justify-content: center;">
+      <button id="cancel-btn" class="link" style="padding: 10px 20px; margin-right: 20px; color: #4d4d4d; background-color: #f2f2f2; border: none; border-radius: 5px; cursor: pointer;">Cancel</button>
+      <button id="save-btn" class="link" style="padding: 10px 20px; color: #fff; background-color: #ff8c00; border: none; border-radius: 5px; cursor: pointer;">Save</button>
+    </div>
+  </div>
+</div>
+        
+        </br>
+        </br>
+        </br>
+        </br>
+    
+        <footer>
+            <span>All rights reserved</span></br>
+            <a href="#">Report a technical support issues</a>
+        </footer>
+
+	<script>
+		// Get the modals
+// Get the modals
+var editModals = document.querySelectorAll(".modal");
+
+// Get the <span> elements that close the modals
+var closeBtns = document.querySelectorAll(".close");
+
+// Get the forms inside the modals
+var forms = document.querySelectorAll(".modal-content form");
+
+// Get the current data elements
+var dataElements = document.querySelectorAll(".current-data");
+
+// Function to open the corresponding modal and populate it with current data
+function openEditModal(fieldName) {
+  // Get the element that displays the value of the field
+  const fieldValueElement = document.getElementById(fieldName);
+
+  // Get the value of the field and display it in the edit modal
+  const fieldValue = fieldValueElement.innerText;
+  const editInput = document.getElementById("edit-input");
+  editInput.value = fieldValue;
+
+  // Show the edit modal
+  const editModal = document.getElementById("edit-modal");
+  editModal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+closeBtns.forEach(function(btn) {
+  btn.onclick = function() {
+    btn.parentElement.parentElement.style.display = "none";
+  }
+});
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  editModals.forEach(function(modal) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  });
+};
+	</script>
+
+        
+    </main>
+
+    </body>
+
+</html>

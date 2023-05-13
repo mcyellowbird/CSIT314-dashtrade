@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DashTrade: Account Settings</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="generateData.js"></script>
+  </head>
+  <body>
+    <div class="nav-container">
+        <header class="navbar">
+          <a class="navbar-logo" href="#">DashTrade</a>
+          <nav class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="TradieView.html">Services</a>
+            <a href="AboutUs.html">About</a>
+            <a href="ContactUs.html">Support</a>
+            <a href="ClientAccountView.html">Account</a>
+          </nav>
+        </header>
+        <header class="Accountnavbar">
+            <nav class="Accountnavbar-links">
+              <div class="button-container">
+                <a href="OverviewAccount.html" class="button-link">
+                  <div class="button">
+                    <span>Overview</span>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="button-container">
+                <a href="ProfileAccount.html" class="button-link">
+                  <div class="button">
+                    <span>Profile Info</span>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="button-container">
+                <a href="PaymentAccount.html" class="button-link">
+                  <div class="button">
+                    <span>Payment Methods</span>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="button-container">
+                <a href="TaskInfoAccount.html" class="button-link">
+                  <div class="button">
+                    <span>Task Info</span>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="button-container">
+                <a href="SecurityAccount.html" class="button-link">
+                  <div class="button">
+                    <span>Security</span>
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                </a>
+              </div>
+            </nav>
+          </header>
+        
+    </div>
+    
+    <main>
+        <h2 style = "text-align: center; font-size: 30px; margin-left: 40px; margin-top: 60px;" >Payment Methods</h2>
+        
+        <section class="section">
+          <div class="section-title">Payment Methods</div>
+          <div class="section-content">
+            <!-- Display added payment methods -->
+            <div id="payment-methods-container">
+              <!-- Example payment method -->
+              <div class="payment-method">
+                <span class="payment-method-type">Debit/Credit card</span>
+                <span class="payment-method-details">Ending in •••• 8593</span>
+                <button class="link" onclick="removePaymentMethod(this)">X</button>
+              </div>
+              <br>
+            </div>
+            
+            <!-- Add Payment Method button -->
+            <br>
+            <button class="link" onclick="toggleAddPaymentForm()">Add Payment Method</button>
+          </div>
+        </section>
+
+<div id="add-payment-form" style="display: none; width: 40%; margin: 0 auto;">
+  <h2 style="color: #4d4d4d; margin-bottom: 20px;">Add Payment Method</h2>
+  <form onsubmit="addPaymentMethod(event)" style="display: flex; flex-direction: column;">
+    <label for="card-number" style="font-size: 16px; color: #4d4d4d; margin-bottom: 10px;">Card Number:</label>
+    <input type="text" id="card-number" required style="padding: 10px; border: none; border-radius: 5px; background-color: #f2f2f2; margin-bottom: 20px;">
+    
+    <label for="full-name" style="font-size: 16px; color: #4d4d4d; margin-bottom: 10px;">Full Name:</label>
+    <input type="text" id="full-name" required style="padding: 10px; border: none; border-radius: 5px; background-color: #f2f2f2; margin-bottom: 20px;">
+    
+    <label for="expiry-date" style="font-size: 16px; color: #4d4d4d; margin-bottom: 10px;">Expiry Date:</label>
+    <input type="text" id="expiry-date" required style="padding: 10px; border: none; border-radius: 5px; background-color: #f2f2f2; margin-bottom: 20px;">
+    
+    <label for="ccv" style="font-size: 16px; color: #4d4d4d; margin-bottom: 10px;">CCV:</label>
+    <input type="text" id="ccv" required style="padding: 10px; border: none; border-radius: 5px; background-color: #f2f2f2; margin-bottom: 20px;">
+    
+    <div style="display: flex; justify-content: center;">
+      <button type="submit" style="padding: 10px 20px; color: #fff; background-color: #ff8c00; border: none; border-radius: 5px; cursor: pointer;">Add</button>
+    </div>
+  </form>
+</div>
+<script>
+  // Function to toggle the display of the Add Payment Method form
+  function toggleAddPaymentForm() {
+    var form = document.getElementById("add-payment-form");
+    if (form.style.display === "none") {
+      form.style.display = "block";
+    } else {
+      form.style.display = "none";
+    }
+  }
+
+  function removePaymentMethod(button) {
+  // Find the parent payment-method div
+  var paymentMethodDiv = button.parentNode;
+  
+  // Remove the payment-method div from the container
+  var container = document.getElementById("payment-methods-container");
+  container.removeChild(paymentMethodDiv);
+}
+  
+  // Function to add a new payment method
+  function addPaymentMethod(event) {
+  event.preventDefault();
+  
+  // Get the form values
+  var cardNumber = document.getElementById('card-number').value;
+  var fullName = document.getElementById('full-name').value;
+  var expiryDate = document.getElementById('expiry-date').value;
+  var ccv = document.getElementById('ccv').value;
+  
+  // Create a new payment method element
+  var paymentMethodElement = document.createElement('div');
+  paymentMethodElement.className = 'payment-method';
+  
+  // Create the payment method type element
+  var paymentMethodTypeElement = document.createElement('span');
+  paymentMethodTypeElement.className = 'payment-method-type';
+  paymentMethodTypeElement.textContent = 'Debit/Credit card';
+  paymentMethodElement.appendChild(paymentMethodTypeElement);
+  
+  // Create the payment method details element
+  var paymentMethodDetailsElement = document.createElement('span');
+  paymentMethodDetailsElement.className = 'payment-method-details';
+  paymentMethodDetailsElement.textContent = 'Ending in •••• ' + cardNumber.slice(-4);
+  paymentMethodElement.appendChild(paymentMethodDetailsElement);
+  
+  // Create the remove button element
+  var removeButtonElement = document.createElement('button');
+  removeButtonElement.className = 'link';
+  removeButtonElement.textContent = 'X';
+  removeButtonElement.setAttribute('onclick', 'removePaymentMethod(this)');
+  paymentMethodElement.appendChild(removeButtonElement);
+  
+  // Append the payment method element to the container
+  var paymentMethodsContainer = document.getElementById('payment-methods-container');
+  paymentMethodsContainer.appendChild(paymentMethodElement);
+  
+  // Clear the form
+  document.getElementById('card-number').value = '';
+  document.getElementById('full-name').value = '';
+  document.getElementById('expiry-date').value = '';
+  document.getElementById('ccv').value = '';
+}
+</script>
+        
+        </br>
+        </br>
+        </br>
+        </br>
+    
+        <footer>
+            <span>All rights reserved</span></br>
+            <a href="#">Report a technical support issues</a>
+        </footer>
+
+
+
+        
+    </main>
+
+    </body>
+
+</html>

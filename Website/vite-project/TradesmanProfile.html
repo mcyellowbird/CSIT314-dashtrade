@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DashTrade: Community Guidelines</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="generateData.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <a class="navbar-logo" href="#">DashTrade</a>
+      <nav class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="TradieView.html">Services</a>
+        <a href="AboutUs.html">About</a>
+        <a href="ContactUs.html">Support</a>
+        <a href="ClientAccountView.html">Account</a>
+        
+      </nav>
+    </header>
+    <main>
+        <div class="tradesman-profile">
+            <img class="logo" src="company-logo.png" alt="Company Logo">
+            <h1 class="company-name">Company Name</h1>
+            <p class="description">Introducing Company Name, the premier tradesman company dedicated to delivering top-quality craftsmanship and exceptional service. With a team of highly skilled and experienced professionals, we specialize in a wide range of trades, including plumbing, electrical, carpentry, and more. Whether you need a quick repair, a complete renovation, or a custom project, our experts are committed to exceeding your expectations. We take pride in our attention to detail, reliability, and customer satisfaction, ensuring that every job is executed with precision and care. From residential to commercial projects, Comapny Name is your trusted partner for all your tradesman needs. Experience the difference of true craftsmanship and unmatched professionalism with Company Name today.</p>
+            <span class="rating">8.5</span>
+            <span class="rating-out-of">/10</span>
+                <br>
+            <button class="reviews-button">Reviews</button>
+            <div class = "reviews-list">
+                <br>
+                <div class="infoMembersTable">
+                    <div class="infoMembersRow">
+                    <div class="infoMembersData">
+                        <p class="memberName">Steven</p>
+                        <p class="memberTestimonial">I had a complex electrical issue in my office, and Company Name came to the rescue. Their team of electricians demonstrated extensive knowledge and skill in resolving the problem. They worked efficiently, ensuring minimal disruption to my business operations. I highly recommend Company Name for their prompt response, expertise, and professionalism. I would rate them a solid 9.5 out of 10 for their outstanding electrical services.</p>
+                    </div>
+                    <div class="infoMembersData">
+                        <p class="memberName">Sarah</p>
+                        <p class="memberTestimonial">Company Name recently completed a custom carpentry project for me, and I couldn't be happier with the outcome. Their craftsmanship was exceptional, and they paid attention to every detail. The team was friendly, communicative, and delivered the project within the agreed timeframe. For their exceptional carpentry skills and customer service, I would rate Company Name a solid 9 out of 10.</p>                   
+                    </div>
+                    <div class="infoMembersData">
+                        <p class="memberName">Kyle</p>
+                        <p class="memberTestimonial">Company Name exceeded my expectations when I hired them for a complete kitchen renovation. Their attention to detail and meticulous approach to the project were truly commendable. From the initial consultation to the final result, they demonstrated exceptional craftsmanship and professionalism. I would give Company Name a perfect 10 out of 10 for their exceptional workmanship and dedication to customer satisfaction.</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        
+          <script>
+            const reviewsButton = document.querySelector('.reviews-button');
+            const reviewsList = document.querySelector('.reviews-list');
+
+            reviewsButton.addEventListener('click', () => {
+            reviewsList.classList.toggle('open');
+            });
+          </script>
+
+    </main>
+    </body>
+    </html>

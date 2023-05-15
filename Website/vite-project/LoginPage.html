@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>DashTrade - Login</title>
+</head>
+<body>
+  <div class="login-container">
+    <img src="public/logo.png" alt="DashTrade Logo" class="logo">
+    <h1 class="title">DashTrade</h1>
+    <p class="subtitle">Please login to use DashTrade</p>
+    <form class="login-form">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+      </div>
+      <div class="form-buttons">
+        <button type="submit" class="login-button" href="index.html">Login</button>
+        <button type="button" id="signup-button" class="signup-button">Sign up</button>
+      </div>
+    </form>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="signup-title">Create an Account</h2>
+      <form id="sign-up-form" class="signup-form">
+        <div class="form-group">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" required>
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" required>
+        </div>
+        <div class="form-group">
+          <label for="signup-email">Email Address:</label>
+          <input type="email" id="signup-email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input type="text" id="address" required>
+        </div>
+        <button type="submit" class="link">Confirm</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Get the sign-up button
+var signUpButton = document.getElementById("signup-button");
+
+// Get the sign-up form
+var signUpForm = document.getElementById("sign-up-form");
+
+// Get the modal
+var modal = document.getElementById("modal");
+
+// Function to show or hide the sign-up form
+function toggleSignUpForm() {
+  modal.style.display = "block";
+}
+
+// Function to hide the modal
+function hideModal() {
+  modal.style.display = "none";
+}
+
+// Attach event listener to the sign-up button
+signUpButton.addEventListener("click", function() {
+  toggleSignUpForm();
+});
+
+// Attach event listener to the close button in the modal
+var closeButton = document.querySelector(".close");
+closeButton.addEventListener("click", function() {
+  hideModal();
+});
+
+// Attach event listener to the form submit button
+var submitButton = document.querySelector(".confirm-button");
+submitButton.addEventListener("click", function(event) {
+  event.preventDefault();
+  // Perform form submission logic here
+  // ...
+  // Hide the modal after form submission
+  hideModal();
+});
+
+  </script>
+</body>
+</html>

@@ -133,9 +133,19 @@ table {
 
 }
 
+.rowTitle{
+  height: 20px;
+  margin-bottom: 30px;
+  margin-left: 90px;
+  text-align: left;
+}
 
-
-
+.arrowData{
+  border: 0px;
+  width: 50px;
+  height: 5px;
+  font-size: 15px;
+}
 
 .arrow{
   border-bottom: 2px solid #333;
@@ -150,7 +160,7 @@ table {
   width: 8px;
 }
 
-th {
+th, .CompanyTD {
   padding: 12px 15px;
   text-align: center;
   border: 1px solid lightgray;
@@ -162,130 +172,61 @@ th {
   transition: all .5s linear;
 }
 
-.servicesTable {
-  text-align: center;
-  margin: 20px auto;
-}
-
-.CompanyTD {
-  padding: 10px;
-  text-align: center;
-  border: 1px solid lightgray;
-  margin: 10px;
-  border-radius: 5px;
-  width: 225px;
-  height: 200px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: all .2s linear;
-}
-
 .CompanyTD:hover {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
+  background-color: white;
+  box-shadow: 1px 1px 5px var(--secondary-color);
+  border-radius: 10px;
+  margin: 10%;
   cursor: pointer;
-  scale: 1.1;
+  transform: scale(1.125);
+  transition: transform 0.2s ease-in-out;
 }
 
-.serviceItem {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+.infoTable{
+  background-color: white;
+  width: auto;
 }
 
-.serviceItem img {
-  height: 100px;
-  width: 100px;
-  margin-bottom: 10px;
+.infoData{
+  background-color: white;
+  width: auto;
 }
 
-.serviceItem h3 {
-  font-size: 16px;
-  margin: 0;
-}
-
-.button {
-  display: inline-block;
-  padding: 8px 15px;
-  margin-top: 10px;
-  border-radius: 5px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  color: var(--accent-color);
-  background-color: var(--secondary-color);
-  transition: all 0.3s ease-in-out;
-}
-
-.button:hover {
-  background-color: var(--primary-color);
-  color: var(--accent-color);
+.infoRow:hover{
+  background-color: white;
+  border-radius: 10px;
+  margin: 10%;
   cursor: pointer;
+  
 }
 
-
-.MemberInfoText {
-  margin: 20px auto;
-  text-align: center;
-  width: 75%;
+.infoData:hover{
+  background-color: white;
+  border-radius: 10px;
+  margin: 10%;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
 }
 
-.infoTable {
-  border: 2px solid #ccc;
-  padding: 20px;
-  margin: 0 auto;
+.infoMembersTable{
+  background-color: white;
+  border-spacing: 5px;
+  margin: auto;
+
 }
 
-.infoRow {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.infoMembersRow{
+  background-color: white;
 }
 
-.infoData {
-  flex-basis: 50%;
-  padding: 20px;
+.infoMembersData{
+  background-color: white;
+  font-size: 10px;
+  width: auto;
+  height: 10px;
+  padding: 5px;
 }
-
-.infoData h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.infoData p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.infoMembersTable {
-  width: 100%;
-}
-
-.infoMembersRow {
-  display: table-row;
-}
-
-.infoMembersData {
-  display: table-cell;
-  padding: 10px;
-  width: 33.33%;
-}
-
-.memberName {
-  margin: 2px;
-  font-weight: bold;
-}
-
-.memberTestimonial {
-  margin: 0;
-  height: 200px; /* Adjust the height as needed */
-  overflow: auto; /* Add scrollbars if content exceeds the height */
-}
-
 
 .CDTtableScroll{
   height: 500px; 
@@ -997,122 +938,4 @@ hr{
   .modal-content {
     width: 90%;
   }
-}
-
-.MainCatchTable {
-  width: 75%;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ddd;
-  background-color: #f9f9f9;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.table-row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.table-column {
-  flex-basis: 50%;
-  padding: 20px;
-  text-align: center;
-}
-
-.postButton {
-  display: block;
-  width: 200px; 
-  margin: 20px auto; 
-  padding: 15px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  background-color: #ff8c00;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.postButton:hover {
-  background-color: #ff6f00;
-  cursor: pointer;
-}
-
-.centered {
-  display: flex;
-  justify-content: center;
-}
-
-.tradesman-profile {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #F7F7F7;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  margin-top: 50px;
-}
-
-.logo {
-  width: 100px;
-  height: 100px;
-}
-
-.company-name {
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.description {
-  margin-top: 5px;
-}
-
-.rating {
-  font-size: 32px;
-  font-weight: bold;
-  color: #FFC107;
-}
-
-.rating-out-of {
-  font-size: 20px;
-  color: #555555;
-  margin-left: 5px;
-}
-
-.reviews-list {
-  display: none;
-  list-style-type: none;
-  padding: 0;
-  margin-top: 10px;
-}
-
-.reviews-list.open {
-  display: block;
-}
-
-.reviews-list li {
-  margin-bottom: 5px;
-}
-
-.reviews-button {
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  color: var(--accent-color);
-  background-color: var(--secondary-color);
-  transition: all 0.3s ease-in-out;
-  margin-top: 10px;
-  cursor: pointer;
-}
-
-.reviews-button:hover {
-  background-color: var(--primary-color);
-  color: var(--accent-color);
 }

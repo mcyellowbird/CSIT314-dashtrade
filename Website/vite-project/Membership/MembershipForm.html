@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DashTrade</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="generateData.js"></script>
+  </head>
+  <body onload="generateTradies(); populateTradies();">
+    <header class="navbar">
+      <a class="navbar-logo" href="">DashTrade</a>
+      <nav class="navbar-links">
+        <div class="dropdown">
+          <a href="index.html" class="navbar-link">Home</a>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="navbar-link">About</a>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="navbar-link">Services</a>
+          <div class="dropdown-content">
+            <a href="Services/CarpentryServices.html">Carpentry Services</a>
+            <a href="Services/ElectricalServices.html">Electrical Services</a>
+            <a href="Services/LandscaperServices.html">Landscaping Services</a>
+            <a href="Services/PlumbingServices.html">Plumbing Services</a>
+            <a href="Services/PaintingServices.html">Painting Services</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="ContactUs.html" class="navbar-link">Support</a>
+          <div class="dropdown-content">
+            <a href="SupportPage/UnderstandingDashTradeSupport.html">Understanding DashTrade</a>
+            <a href="SupportPage/FormsSupport.html">Forms</a>
+            <a href="SupportPage/ContactUsSupport.html">Contact Us</a>
+            <a href="SupportPage/TermsAndConditionsSupport.html">Terms and Conditions</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="navbar-link">Account</a>
+          <div class="dropdown-content">
+            <a href="LoginPage.html">Logout</a>
+            <a href="AccountSettings/OverviewAccount.html">Account Settings</a>
+            <a href="Membership/MembershipForm.html">Membership Information</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h2 style = "text-align: left; font-size: 45px; margin-left: 40px; margin-top: 70px;" >Membership Application & Information</h2>
+
+      <p style = " width: 75%; align-items: center; margin: auto; margin-bottom: 50px;">
+        Introducing our exclusive membership subscription, designed to make your life easier and more convenient. By becoming a member, you gain access to a world of unlimited assistance with tradesmen for any task you need, all without incurring any additional charges. Picture this: whether it's a leaky faucet, a faulty electrical connection, or a furniture assembly nightmare, our team of skilled tradesmen is just a call away. By joining our membership program, you no longer need to worry about the hassle of finding reliable professionals or the uncertainty of unexpected costs. With a simple fixed annual membership fee of $1500 or a convenient monthly payment of $175, automatically invoiced to your email through your preferred payment method, you unlock a host of benefits that will transform the way you approach household tasks. From the moment you become a member, we are committed to providing prompt, reliable, and expert assistance whenever you need it, ensuring peace of mind and saving you both time and money.<br><br>
+      
+        To pause or cancel your membership, please fill out the <a href="/Forms/AccountForm.html">Account Form</a>. We understand that life can sometimes get in the way, and we want to provide you with the flexibility you need. Our account form ensures a seamless process for managing your membership, allowing you to take a break or make changes as necessary. Simply complete the form, and our dedicated team will handle your request promptly. We value your membership and strive to make every aspect of your experience as convenient as possible.
+
+        <br><br>
+        Below this information, you will find the membership application form. Please take a moment to fill out the form with your details and preferences. Once submitted, our team will review your application and get back to you promptly. We can't wait to welcome you as a valued member and provide you with unparalleled service and assistance.
+      </p>
+
+        
+        <form class="request-form" id="applicationForm">
+          <div class="form-group">
+            <label for="Full-Name">Full Name</label>
+            <input type="text" id="Full-Name" name="Full-Name" class="form-control" placeholder="">
+          </div>
+        
+          <div class="form-group">
+            <label for="Email-Address">Email Address</label>
+            <input type="text" id="Email-Address" name="Email-Address" class="form-control" placeholder="">
+            <div class="form-check">
+              <br>
+              <label>Please Select One:</label>
+              <input type="checkbox" id="monthly" name="monthly" class="form-check-input">
+              <label for="monthly" class="form-check-label">Monthly Payment?</label>
+              <input type="checkbox" id="yearly" name="yearly" class="form-check-input">
+              <label for="yealry" class="form-check-label">Yearly Payment?</label>
+            </div>
+          </div>
+        
+          <br>
+          <button class="button" id="submitBtn" onclick="submitForm(event)">Submit Application</button>
+        </form>
+        
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Application Submitted!</h3>
+            <p>Your application has been submitted. You will receive an invoice to your email address once it is confirmed.</p>
+          </div>
+        </div>
+        
+        <footer>
+          <span>All rights reserved</span><br>
+          <a href="#">Report a technical support issue</a>
+        </footer>
+        
+        <script>
+          function openModal() {
+            const modal = document.getElementById("myModal");
+            modal.style.display = "block";
+          }
+        
+          function closeModal() {
+            const modal = document.getElementById("myModal");
+            modal.style.display = "none";
+          }
+        
+          function submitForm(event) {
+            event.preventDefault();
+            openModal();
+            document.getElementById("applicationForm").reset();
+          }
+        </script>
+        
+        
+
+      </br>
+      </br>
+      </br>
+      </br>
+      <footer>
+      <span>All rights reserved</span></br>
+      <a href="#">Report a technical support issues</a>
+      </footer>
+
+      
+    </main>
+    </body>
+</html>

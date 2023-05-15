@@ -8,17 +8,90 @@
   </head>
   <body>
     <header class="navbar">
-      <a class="navbar-logo" href="#">DashTrade</a>
+      <a class="navbar-logo" href="">DashTrade</a>
       <nav class="navbar-links">
-        <a href="index.html">Home</a>
-        <a href="TradieView.html">Services</a>
-        <a href="AboutUs.html">About</a>
-        <a href="ContactUs.html">Support</a>
-        <a href="ClientAccountView.html">Account</a>
-        
+        <div class="dropdown">
+          <a href="index.html" class="navbar-link">Home</a>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="navbar-link">About</a>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="navbar-link">Services</a>
+          <div class="dropdown-content">
+            <a href="Services/CarpentryServices.html">Carpentry Services</a>
+            <a href="Services/ElectricalServices.html">Electrical Services</a>
+            <a href="Services/LandscaperServices.html">Landscaping Services</a>
+            <a href="Services/PlumbingServices.html">Plumbing Services</a>
+            <a href="Services/PaintingServices.html">Painting Services</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="ContactUs.html" class="navbar-link">Support</a>
+          <div class="dropdown-content">
+            <a href="SupportPage/UnderstandingDashTradeSupport.html">Understanding DashTrade</a>
+            <a href="SupportPage/FormsSupport.html">Forms</a>
+            <a href="SupportPage/ContactUsSupport.html">Contact Us</a>
+            <a href="SupportPage/TermsAndConditionsSupport.html">Terms and Conditions</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="navbar-link">Account</a>
+          <div class="dropdown-content">
+            <a href="LoginPage.html">Logout</a>
+            <a href="AccountSettings/OverviewAccount.html">Account Settings</a>
+            <a href="Membership/MembershipForm.html">Membership Information</a>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
-      
-        
-    </main>
+      <p style = "margin-left: 30px;"><a href="./vite-project/ContactUs.html">Support Page</a> > <a href="PaymentsSupport.html">Payments</a></p>
+      <h2 style = "text-align: left; font-size: 45px; margin-left: 40px; margin-top: 70px;" >Payments</h2>
+
+      <div class="faq">
+          <div class="question"> How do I create an account on the website?</div>
+          <div class="answer">
+            Creating an account is simple and quick! Just click on the "Sign Up" or "Register" button on the homepage and provide the required information, such as your name, email address, and a secure password. Once you submit the registration form, you'll receive a verification email to confirm your account. Follow the instructions in the email to complete the registration process and gain access to your account.
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">How can I update my profile information?</div>
+          <div class="answer">
+            To update your profile information, log into your account and navigate to the "Profile" or "Account Settings" section. From there, you can edit your personal details, contact information, and any other relevant information such as your skills or qualifications. Remember to save your changes after updating your profile to ensure the new information is updated on your account.
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">What should I do if I forget my account password?</div>
+          <div class="answer">
+            If you forget your account password, don't worry! Simply click on the "Forgot Password" link on the login page. You'll be prompted to enter the email address associated with your account. Once submitted, you'll receive an email with instructions to reset your password. Follow the provided link and create a new password to regain access to your account.
+          </div>
+        </div>
+      </br>
+    </br>
+    </br>
+    </br>
+    
+    <footer>
+        <span>All rights reserved</span></br>
+        <a href="#">Report a technical support issues</a>
+    </footer>
+
+    <script>
+      const faqs = document.querySelectorAll('.faq');
+  
+      faqs.forEach(faq => {
+        const question = faq.querySelector('.question');
+        const answer = faq.querySelector('.answer');
+  
+        question.addEventListener('click', () => {
+          faq.classList.toggle('open');
+        });
+      });
+    </script>
+
+</main>
+</body>
+</html>

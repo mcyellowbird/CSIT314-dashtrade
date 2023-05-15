@@ -8,17 +8,90 @@
   </head>
   <body>
     <header class="navbar">
-      <a class="navbar-logo" href="#">DashTrade</a>
+      <a class="navbar-logo" href="">DashTrade</a>
       <nav class="navbar-links">
-        <a href="index.html">Home</a>
-        <a href="TradieView.html">Services</a>
-        <a href="AboutUs.html">About</a>
-        <a href="ContactUs.html">Support</a>
-        <a href="ClientAccountView.html">Account</a>
-        
+        <div class="dropdown">
+          <a href="index.html" class="navbar-link">Home</a>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="navbar-link">About</a>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="navbar-link">Services</a>
+          <div class="dropdown-content">
+            <a href="Services/CarpentryServices.html">Carpentry Services</a>
+            <a href="Services/ElectricalServices.html">Electrical Services</a>
+            <a href="Services/LandscaperServices.html">Landscaping Services</a>
+            <a href="Services/PlumbingServices.html">Plumbing Services</a>
+            <a href="Services/PaintingServices.html">Painting Services</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="ContactUs.html" class="navbar-link">Support</a>
+          <div class="dropdown-content">
+            <a href="SupportPage/UnderstandingDashTradeSupport.html">Understanding DashTrade</a>
+            <a href="SupportPage/FormsSupport.html">Forms</a>
+            <a href="SupportPage/ContactUsSupport.html">Contact Us</a>
+            <a href="SupportPage/TermsAndConditionsSupport.html">Terms and Conditions</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="navbar-link">Account</a>
+          <div class="dropdown-content">
+            <a href="LoginPage.html">Logout</a>
+            <a href="AccountSettings/OverviewAccount.html">Account Settings</a>
+            <a href="Membership/MembershipForm.html">Membership Information</a>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
+      <p style = "margin-left: 30px;"><a href="./vite-project/ContactUs.html">Support Page</a> > <a href="HelpfulTipsSupport.html">Helpful Tips</a></p>
+        <h2 style = "text-align: left; font-size: 45px; margin-left: 40px; margin-top: 70px;" >Helpful Tips</h2>
+
+        <div class="faq">
+            <div class="question">How can I increase the visibility of my task/job listing on the website?</div>
+            <div class="answer">
+              To increase the visibility of your task/job listing, consider providing a clear and detailed description of the job, including specific requirements and expectations. Adding relevant keywords can also improve visibility in search results. Additionally, promoting your task through social media channels or sharing it with specific tradesmen can attract more attention and increase the chances of finding the right professional for the job.
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">What are some tips for effectively communicating with tradesmen?</div>
+            <div class="answer">
+              Effective communication with tradesmen is essential for a smooth and successful collaboration. Ensure that you provide accurate and timely responses to their inquiries or messages. Be clear about your expectations, project details, and any specific requirements. Maintaining open and transparent communication throughout the process will help ensure a positive experience for both parties involved.
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">How can I evaluate the performance of a tradesman after completing a task?</div>
+            <div class="answer">
+              Evaluating the performance of a tradesman is important for maintaining a trustworthy and reliable community. After completing a task, take a moment to leave a review or rating based on their professionalism, quality of work, timeliness, and overall experience. This feedback helps other users make informed decisions and encourages tradesmen to maintain high standards of service.
+            </div>
+          </div>
+        </br>
+      </br>
+      </br>
+      </br>
       
-        
-    </main>
+      <footer>
+          <span>All rights reserved</span></br>
+          <a href="#">Report a technical support issues</a>
+      </footer>
+
+      <script>
+        const faqs = document.querySelectorAll('.faq');
+    
+        faqs.forEach(faq => {
+          const question = faq.querySelector('.question');
+          const answer = faq.querySelector('.answer');
+    
+          question.addEventListener('click', () => {
+            faq.classList.toggle('open');
+          });
+        });
+      </script>
+
+  </main>
+  </body>
+  </html>

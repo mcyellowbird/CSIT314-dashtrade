@@ -8,17 +8,90 @@
   </head>
   <body>
     <header class="navbar">
-      <a class="navbar-logo" href="#">DashTrade</a>
+      <a class="navbar-logo" href="">DashTrade</a>
       <nav class="navbar-links">
-        <a href="index.html">Home</a>
-        <a href="TradieView.html">Services</a>
-        <a href="AboutUs.html">About</a>
-        <a href="ContactUs.html">Support</a>
-        <a href="ClientAccountView.html">Account</a>
-        
+        <div class="dropdown">
+          <a href="index.html" class="navbar-link">Home</a>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="navbar-link">About</a>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="navbar-link">Services</a>
+          <div class="dropdown-content">
+            <a href="Services/CarpentryServices.html">Carpentry Services</a>
+            <a href="Services/ElectricalServices.html">Electrical Services</a>
+            <a href="Services/LandscaperServices.html">Landscaping Services</a>
+            <a href="Services/PlumbingServices.html">Plumbing Services</a>
+            <a href="Services/PaintingServices.html">Painting Services</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="ContactUs.html" class="navbar-link">Support</a>
+          <div class="dropdown-content">
+            <a href="SupportPage/UnderstandingDashTradeSupport.html">Understanding DashTrade</a>
+            <a href="SupportPage/FormsSupport.html">Forms</a>
+            <a href="SupportPage/ContactUsSupport.html">Contact Us</a>
+            <a href="SupportPage/TermsAndConditionsSupport.html">Terms and Conditions</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="navbar-link">Account</a>
+          <div class="dropdown-content">
+            <a href="LoginPage.html">Logout</a>
+            <a href="AccountSettings/OverviewAccount.html">Account Settings</a>
+            <a href="Membership/MembershipForm.html">Membership Information</a>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
+      <p style = "margin-left: 30px;"><a href="./vite-project/ContactUs.html">Support Page</a> > <a href="PaymentsSupport.html">Payments</a></p>
+        <h2 style = "text-align: left; font-size: 45px; margin-left: 40px; margin-top: 70px;" >Payments</h2>
+
+        <div class="faq">
+            <div class="question">How can I update my payment information?</div>
+            <div class="answer">
+              To update your payment information, log into your account and navigate to the "Payment Settings" section. From there, you can easily update your credit card details or add a new payment method.
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">What payment methods are accepted on your website?</div>
+            <div class="answer">
+              We accept a variety of payment methods, including major credit cards such as Visa, Mastercard, and American Express. Additionally, we also support online payment platforms like PayPal and Apple Pay for your convenience.
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="question">How can I request a refund?</div>
+            <div class="answer">
+              If you would like to request a refund for a purchase, please reach out to our customer support team with your order details. We will review your request and assist you in the refund process according to our refund policy. Please note that refunds are subject to eligibility criteria outlined in our terms and conditions.
+            </div>
+          </div>
+        </br>
+      </br>
+      </br>
+      </br>
       
-        
-    </main>
+      <footer>
+          <span>All rights reserved</span></br>
+          <a href="#">Report a technical support issues</a>
+      </footer>
+
+      <script>
+        const faqs = document.querySelectorAll('.faq');
+    
+        faqs.forEach(faq => {
+          const question = faq.querySelector('.question');
+          const answer = faq.querySelector('.answer');
+    
+          question.addEventListener('click', () => {
+            faq.classList.toggle('open');
+          });
+        });
+      </script>
+
+  </main>
+  </body>
+  </html>

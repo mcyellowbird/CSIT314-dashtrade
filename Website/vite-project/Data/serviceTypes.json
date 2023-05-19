@@ -1,0 +1,112 @@
+{
+    "electrical": [
+        {
+            "name": "Wiring",
+            "price": 348.77
+        },
+        {
+            "name": "Appliances",
+            "price": 484.6
+        },
+        {
+            "name": "Door Bell",
+            "price": 564.75
+        },
+        {
+            "name": "Switch and Socket",
+            "price": 636.9
+        },
+        {
+            "name": "MCB & Fuse",
+            "price": 413.91
+        }
+    ],
+    "plumbing": [
+        {
+            "name": "Leakages",
+            "price": 609.3
+        },
+        {
+            "name": "Basin & Sink",
+            "price": 85.27
+        },
+        {
+            "name": "Bath Fittings",
+            "price": 91.71
+        },
+        {
+            "name": "Toilet",
+            "price": 733.53
+        },
+        {
+            "name": "Water Tank",
+            "price": 170.34
+        }
+    ],
+    "carpentry": [
+        {
+            "name": "Bed",
+            "price": 433.33
+        },
+        {
+            "name": "Furniture Repair",
+            "price": 430.29
+        },
+        {
+            "name": "Cupboard & Drawer",
+            "price": 3440.46
+        },
+        {
+            "name": "Door",
+            "price": 842.23
+        },
+        {
+            "name": "Window & Curtain",
+            "price": 340.31
+        }
+    ],
+    "landscaping": [
+        {
+            "name": "Lawn Mowing",
+            "price": 482.46
+        },
+        {
+            "name": "Weeding",
+            "price": 2772.36
+        },
+        {
+            "name": "Hedge Trimming",
+            "price": 769.49
+        },
+        {
+            "name": "Landscape Design",
+            "price": 374.01
+        },
+        {
+            "name": "Pruning",
+            "price": 580.34
+        }
+    ],
+    "painting": [
+        {
+            "name": "Fence Painting",
+            "price": 594.46
+        },
+        {
+            "name": "Exterior Painting",
+            "price": 548.51
+        },
+        {
+            "name": "Trim Painting",
+            "price": 819.62
+        },
+        {
+            "name": "Wall Painting",
+            "price": 203.35
+        },
+        {
+            "name": "Ceiling Painting",
+            "price": 228.61
+        }
+    ]
+}

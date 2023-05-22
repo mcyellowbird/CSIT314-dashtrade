@@ -1,9 +1,704 @@
 {
-  "serviceID": {
-    "service-type": {},
-    "service-description": {},
-    "quoted-cost": {},
-    "address": {},
-    "address-image": {}
-  }
+    "services": [
+        {
+            "requestID": "r01",
+            "serviceType": "Landscaping",
+            "jobDescription": "Lawn Mowing",
+            "address": 66527,
+            "quotedCost": "$620.97"
+        },
+        {
+            "requestID": "r02",
+            "serviceType": "Painting",
+            "jobDescription": "Fence Painting",
+            "address": 9757,
+            "quotedCost": "$2844.00"
+        },
+        {
+            "requestID": "r03",
+            "serviceType": "Landscaping",
+            "jobDescription": "Lawn Mowing",
+            "address": 70778,
+            "quotedCost": "$927.14"
+        },
+        {
+            "requestID": "r04",
+            "serviceType": "Plumbing",
+            "jobDescription": "Leakages",
+            "address": 81943,
+            "quotedCost": "$839.63"
+        },
+        {
+            "requestID": "r05",
+            "serviceType": "Carpentry",
+            "jobDescription": "Bed",
+            "address": 19611,
+            "quotedCost": "$291.21"
+        },
+        {
+            "requestID": "r06",
+            "serviceType": "Plumbing",
+            "jobDescription": "Basin & Sink",
+            "address": 37756,
+            "quotedCost": "$817.30"
+        },
+        {
+            "requestID": "r07",
+            "serviceType": "Plumbing",
+            "jobDescription": "Leakages",
+            "address": 38212,
+            "quotedCost": "$176.57"
+        },
+        {
+            "requestID": "r08",
+            "serviceType": "Landscaping",
+            "jobDescription": "Weeding",
+            "address": 66527,
+            "quotedCost": "$2778.04"
+        },
+        {
+            "requestID": "r09",
+            "serviceType": "Painting",
+            "jobDescription": "Exterior Painting",
+            "address": 96238,
+            "quotedCost": "$1485.45"
+        },
+        {
+            "requestID": "r10",
+            "serviceType": "Electrical",
+            "jobDescription": "Wiring",
+            "address": 38992,
+            "quotedCost": "$164.59"
+        },
+        {
+            "requestID": "r11",
+            "serviceType": "Landscaping",
+            "jobDescription": "Hedge Trimming",
+            "address": 81943,
+            "quotedCost": "$2325.91"
+        },
+        {
+            "requestID": "r12",
+            "serviceType": "Electrical",
+            "jobDescription": "Appliances",
+            "address": 70778,
+            "quotedCost": "$55.45"
+        },
+        {
+            "requestID": "r13",
+            "serviceType": "Carpentry",
+            "jobDescription": "Furniture Repair",
+            "address": 70443,
+            "quotedCost": "$518.20"
+        },
+        {
+            "requestID": "r14",
+            "serviceType": "Plumbing",
+            "jobDescription": "Basin & Sink",
+            "address": 54368,
+            "quotedCost": "$875.79"
+        },
+        {
+            "requestID": "r15",
+            "serviceType": "Plumbing",
+            "jobDescription": "Bath Fittings",
+            "address": 74226,
+            "quotedCost": "$648.81"
+        },
+        {
+            "requestID": "r16",
+            "serviceType": "Landscaping",
+            "jobDescription": "Landscape Design",
+            "address": 6948,
+            "quotedCost": "$802.88"
+        },
+        {
+            "requestID": "r17",
+            "serviceType": "Plumbing",
+            "jobDescription": "Basin & Sink",
+            "address": 90546,
+            "quotedCost": "$952.22"
+        },
+        {
+            "requestID": "r18",
+            "serviceType": "Landscaping",
+            "jobDescription": "Hedge Trimming",
+            "address": 62946,
+            "quotedCost": "$4627.92"
+        },
+        {
+            "requestID": "r19",
+            "serviceType": "Landscaping",
+            "jobDescription": "Lawn Mowing",
+            "address": 66478,
+            "quotedCost": "$1124.36"
+        },
+        {
+            "requestID": "r20",
+            "serviceType": "Landscaping",
+            "jobDescription": "Pruning",
+            "address": 93382,
+            "quotedCost": "$900.45"
+        },
+        {
+            "requestID": "r21",
+            "serviceType": "Painting",
+            "jobDescription": "Exterior Painting",
+            "address": 91687,
+            "quotedCost": "$681.25"
+        },
+        {
+            "requestID": "r22",
+            "serviceType": "Electrical",
+            "jobDescription": "Door Bell",
+            "address": 24042,
+            "quotedCost": "$226.07"
+        },
+        {
+            "requestID": "r23",
+            "serviceType": "Electrical",
+            "jobDescription": "Wiring",
+            "address": 42221,
+            "quotedCost": "$4861.22"
+        },
+        {
+            "requestID": "r24",
+            "serviceType": "Plumbing",
+            "jobDescription": "Toilet",
+            "address": 54368,
+            "quotedCost": "$224.20"
+        },
+        {
+            "requestID": "r25",
+            "serviceType": "Electrical",
+            "jobDescription": "Door Bell",
+            "address": 67386,
+            "quotedCost": "$4088.48"
+        },
+        {
+            "requestID": "r26",
+            "serviceType": "Electrical",
+            "jobDescription": "Wiring",
+            "address": 15614,
+            "quotedCost": "$83.35"
+        },
+        {
+            "requestID": "r27",
+            "serviceType": "Plumbing",
+            "jobDescription": "Basin & Sink",
+            "address": 67386,
+            "quotedCost": "$205.21"
+        },
+        {
+            "requestID": "r28",
+            "serviceType": "Carpentry",
+            "jobDescription": "Cupboard & Drawer",
+            "address": 34384,
+            "quotedCost": "$312.81"
+        },
+        {
+            "requestID": "r29",
+            "serviceType": "Landscaping",
+            "jobDescription": "Landscape Design",
+            "address": 9757,
+            "quotedCost": "$3030.72"
+        },
+        {
+            "requestID": "r30",
+            "serviceType": "Electrical",
+            "jobDescription": "Wiring",
+            "address": 53152,
+            "quotedCost": "$455.10"
+        },
+        {
+            "requestID": "r31",
+            "serviceType": "Carpentry",
+            "jobDescription": "Cupboard & Drawer",
+            "address": 51144,
+            "quotedCost": "$3353.15"
+        },
+        {
+            "requestID": "r32",
+            "serviceType": "Electrical",
+            "jobDescription": "Appliances",
+            "address": 94693,
+            "quotedCost": "$479.61"
+        },
+        {
+            "requestID": "r33",
+            "serviceType": "Landscaping",
+            "jobDescription": "Landscape Design",
+            "address": 91687,
+            "quotedCost": "$79.87"
+        },
+        {
+            "requestID": "r34",
+            "serviceType": "Painting",
+            "jobDescription": "Trim Painting",
+            "address": 34274,
+            "quotedCost": "$453.41"
+        },
+        {
+            "requestID": "r35",
+            "serviceType": "Plumbing",
+            "jobDescription": "Basin & Sink",
+            "address": 34274,
+            "quotedCost": "$178.52"
+        },
+        {
+            "requestID": "r36",
+            "serviceType": "Carpentry",
+            "jobDescription": "Furniture Repair",
+            "address": 34274,
+            "quotedCost": "$3317.24"
+        },
+        {
+            "requestID": "r37",
+            "serviceType": "Plumbing",
+            "jobDescription": "Water Tank",
+            "address": 42406,
+            "quotedCost": "$1793.33"
+        },
+        {
+            "requestID": "r38",
+            "serviceType": "Electrical",
+            "jobDescription": "Wiring",
+            "address": 70778,
+            "quotedCost": "$555.24"
+        },
+        {
+            "requestID": "r39",
+            "serviceType": "Electrical",
+            "jobDescription": "Switch and Socket",
+            "address": 38212,
+            "quotedCost": "$323.58"
+        },
+        {
+            "requestID": "r40",
+            "serviceType": "Carpentry",
+            "jobDescription": "Furniture Repair",
+            "address": 4894,
+            "quotedCost": "$660.41"
+        },
+        {
+            "requestID": "r41",
+            "serviceType": "Painting",
+            "jobDescription": "Trim Painting",
+            "address": 81943,
+            "quotedCost": "$807.27"
+        },
+        {
+            "requestID": "r42",
+            "serviceType": "Electrical",
+            "jobDescription": "Appliances",
+            "address": 91687,
+            "quotedCost": "$352.27"
+        },
+        {
+            "requestID": "r43",
+            "serviceType": "Carpentry",
+            "jobDescription": "Door",
+            "address": 38212,
+            "quotedCost": "$796.95"
+        },
+        {
+            "requestID": "r44",
+            "serviceType": "Painting",
+            "jobDescription": "Trim Painting",
+            "address": 4894,
+            "quotedCost": "$731.22"
+        },
+        {
+            "requestID": "r45",
+            "serviceType": "Painting",
+            "jobDescription": "Wall Painting",
+            "address": 51833,
+            "quotedCost": "$558.23"
+        },
+        {
+            "requestID": "r46",
+            "serviceType": "Carpentry",
+            "jobDescription": "Door",
+            "address": 67930,
+            "quotedCost": "$3714.99"
+        },
+        {
+            "requestID": "r47",
+            "serviceType": "Carpentry",
+            "jobDescription": "Window & Curtain",
+            "address": 43858,
+            "quotedCost": "$411.97"
+        },
+        {
+            "requestID": "r48",
+            "serviceType": "Plumbing",
+            "jobDescription": "Toilet",
+            "address": 19277,
+            "quotedCost": "$345.63"
+        },
+        {
+            "requestID": "r49",
+            "serviceType": "Landscaping",
+            "jobDescription": "Lawn Mowing",
+            "address": 34384,
+            "quotedCost": "$179.89"
+        },
+        {
+            "requestID": "r50",
+            "serviceType": "Landscaping",
+            "jobDescription": "Weeding",
+            "address": 37756,
+            "quotedCost": "$913.43"
+        },
+        {
+            "requestID": "r51",
+            "serviceType": "Landscaping",
+            "jobDescription": "Lawn Mowing",
+            "address": 66527,
+            "quotedCost": "$985.23"
+        },
+        {
+            "requestID": "r52",
+            "serviceType": "Electrical",
+            "jobDescription": "Wiring",
+            "address": 15875,
+            "quotedCost": "$976.60"
+        },
+        {
+            "requestID": "r53",
+            "serviceType": "Landscaping",
+            "jobDescription": "Hedge Trimming",
+            "address": 42406,
+            "quotedCost": "$450.19"
+        },
+        {
+            "requestID": "r54",
+            "serviceType": "Carpentry",
+            "jobDescription": "Bed",
+            "address": 9757,
+            "quotedCost": "$609.28"
+        },
+        {
+            "requestID": "r55",
+            "serviceType": "Plumbing",
+            "jobDescription": "Leakages",
+            "address": 81799,
+            "quotedCost": "$649.77"
+        },
+        {
+            "requestID": "r56",
+            "serviceType": "Plumbing",
+            "jobDescription": "Bath Fittings",
+            "address": 19611,
+            "quotedCost": "$919.12"
+        },
+        {
+            "requestID": "r57",
+            "serviceType": "Landscaping",
+            "jobDescription": "Lawn Mowing",
+            "address": 81943,
+            "quotedCost": "$3200.29"
+        },
+        {
+            "requestID": "r58",
+            "serviceType": "Landscaping",
+            "jobDescription": "Weeding",
+            "address": 19611,
+            "quotedCost": "$947.14"
+        },
+        {
+            "requestID": "r59",
+            "serviceType": "Electrical",
+            "jobDescription": "Switch and Socket",
+            "address": 96238,
+            "quotedCost": "$868.94"
+        },
+        {
+            "requestID": "r60",
+            "serviceType": "Painting",
+            "jobDescription": "Fence Painting",
+            "address": 42406,
+            "quotedCost": "$377.90"
+        },
+        {
+            "requestID": "r61",
+            "serviceType": "Carpentry",
+            "jobDescription": "Furniture Repair",
+            "address": 37756,
+            "quotedCost": "$486.49"
+        },
+        {
+            "requestID": "r62",
+            "serviceType": "Electrical",
+            "jobDescription": "Door Bell",
+            "address": 67930,
+            "quotedCost": "$402.12"
+        },
+        {
+            "requestID": "r63",
+            "serviceType": "Carpentry",
+            "jobDescription": "Window & Curtain",
+            "address": 67386,
+            "quotedCost": "$975.94"
+        },
+        {
+            "requestID": "r64",
+            "serviceType": "Carpentry",
+            "jobDescription": "Furniture Repair",
+            "address": 33737,
+            "quotedCost": "$948.15"
+        },
+        {
+            "requestID": "r65",
+            "serviceType": "Landscaping",
+            "jobDescription": "Landscape Design",
+            "address": 35573,
+            "quotedCost": "$516.02"
+        },
+        {
+            "requestID": "r66",
+            "serviceType": "Landscaping",
+            "jobDescription": "Pruning",
+            "address": 66527,
+            "quotedCost": "$225.33"
+        },
+        {
+            "requestID": "r67",
+            "serviceType": "Electrical",
+            "jobDescription": "Door Bell",
+            "address": 70778,
+            "quotedCost": "$95.89"
+        },
+        {
+            "requestID": "r68",
+            "serviceType": "Landscaping",
+            "jobDescription": "Landscape Design",
+            "address": 15875,
+            "quotedCost": "$284.55"
+        },
+        {
+            "requestID": "r69",
+            "serviceType": "Electrical",
+            "jobDescription": "Door Bell",
+            "address": 37756,
+            "quotedCost": "$983.52"
+        },
+        {
+            "requestID": "r70",
+            "serviceType": "Plumbing",
+            "jobDescription": "Water Tank",
+            "address": 23368,
+            "quotedCost": "$503.56"
+        },
+        {
+            "requestID": "r71",
+            "serviceType": "Painting",
+            "jobDescription": "Ceiling Painting",
+            "address": 96238,
+            "quotedCost": "$916.97"
+        },
+        {
+            "requestID": "r72",
+            "serviceType": "Carpentry",
+            "jobDescription": "Furniture Repair",
+            "address": 35573,
+            "quotedCost": "$283.81"
+        },
+        {
+            "requestID": "r73",
+            "serviceType": "Painting",
+            "jobDescription": "Wall Painting",
+            "address": 81799,
+            "quotedCost": "$192.75"
+        },
+        {
+            "requestID": "r74",
+            "serviceType": "Carpentry",
+            "jobDescription": "Cupboard & Drawer",
+            "address": 19611,
+            "quotedCost": "$827.20"
+        },
+        {
+            "requestID": "r75",
+            "serviceType": "Landscaping",
+            "jobDescription": "Pruning",
+            "address": 10276,
+            "quotedCost": "$125.94"
+        },
+        {
+            "requestID": "r76",
+            "serviceType": "Painting",
+            "jobDescription": "Fence Painting",
+            "address": 33544,
+            "quotedCost": "$969.09"
+        },
+        {
+            "requestID": "r77",
+            "serviceType": "Landscaping",
+            "jobDescription": "Landscape Design",
+            "address": 70443,
+            "quotedCost": "$973.70"
+        },
+        {
+            "requestID": "r78",
+            "serviceType": "Painting",
+            "jobDescription": "Exterior Painting",
+            "address": 94693,
+            "quotedCost": "$141.00"
+        },
+        {
+            "requestID": "r79",
+            "serviceType": "Landscaping",
+            "jobDescription": "Hedge Trimming",
+            "address": 4894,
+            "quotedCost": "$1101.02"
+        },
+        {
+            "requestID": "r80",
+            "serviceType": "Electrical",
+            "jobDescription": "Door Bell",
+            "address": 15614,
+            "quotedCost": "$852.40"
+        },
+        {
+            "requestID": "r81",
+            "serviceType": "Plumbing",
+            "jobDescription": "Water Tank",
+            "address": 34384,
+            "quotedCost": "$254.23"
+        },
+        {
+            "requestID": "r82",
+            "serviceType": "Landscaping",
+            "jobDescription": "Weeding",
+            "address": 40329,
+            "quotedCost": "$242.15"
+        },
+        {
+            "requestID": "r83",
+            "serviceType": "Electrical",
+            "jobDescription": "MCB & Fuse",
+            "address": 66478,
+            "quotedCost": "$252.73"
+        },
+        {
+            "requestID": "r84",
+            "serviceType": "Carpentry",
+            "jobDescription": "Cupboard & Drawer",
+            "address": 19277,
+            "quotedCost": "$662.86"
+        },
+        {
+            "requestID": "r85",
+            "serviceType": "Landscaping",
+            "jobDescription": "Hedge Trimming",
+            "address": 15875,
+            "quotedCost": "$744.03"
+        },
+        {
+            "requestID": "r86",
+            "serviceType": "Carpentry",
+            "jobDescription": "Bed",
+            "address": 4894,
+            "quotedCost": "$903.00"
+        },
+        {
+            "requestID": "r87",
+            "serviceType": "Carpentry",
+            "jobDescription": "Cupboard & Drawer",
+            "address": 6948,
+            "quotedCost": "$628.84"
+        },
+        {
+            "requestID": "r88",
+            "serviceType": "Painting",
+            "jobDescription": "Trim Painting",
+            "address": 19483,
+            "quotedCost": "$46.47"
+        },
+        {
+            "requestID": "r89",
+            "serviceType": "Carpentry",
+            "jobDescription": "Door",
+            "address": 38212,
+            "quotedCost": "$901.31"
+        },
+        {
+            "requestID": "r90",
+            "serviceType": "Painting",
+            "jobDescription": "Exterior Painting",
+            "address": 35573,
+            "quotedCost": "$461.91"
+        },
+        {
+            "requestID": "r91",
+            "serviceType": "Electrical",
+            "jobDescription": "MCB & Fuse",
+            "address": 15875,
+            "quotedCost": "$383.71"
+        },
+        {
+            "requestID": "r92",
+            "serviceType": "Plumbing",
+            "jobDescription": "Toilet",
+            "address": 51833,
+            "quotedCost": "$123.82"
+        },
+        {
+            "requestID": "r93",
+            "serviceType": "Landscaping",
+            "jobDescription": "Hedge Trimming",
+            "address": 33544,
+            "quotedCost": "$1243.14"
+        },
+        {
+            "requestID": "r94",
+            "serviceType": "Painting",
+            "jobDescription": "Fence Painting",
+            "address": 19277,
+            "quotedCost": "$500.36"
+        },
+        {
+            "requestID": "r95",
+            "serviceType": "Landscaping",
+            "jobDescription": "Weeding",
+            "address": 81799,
+            "quotedCost": "$1418.67"
+        },
+        {
+            "requestID": "r96",
+            "serviceType": "Landscaping",
+            "jobDescription": "Pruning",
+            "address": 10276,
+            "quotedCost": "$180.91"
+        },
+        {
+            "requestID": "r97",
+            "serviceType": "Plumbing",
+            "jobDescription": "Toilet",
+            "address": 35573,
+            "quotedCost": "$244.51"
+        },
+        {
+            "requestID": "r98",
+            "serviceType": "Painting",
+            "jobDescription": "Fence Painting",
+            "address": 53152,
+            "quotedCost": "$125.60"
+        },
+        {
+            "requestID": "r99",
+            "serviceType": "Landscaping",
+            "jobDescription": "Pruning",
+            "address": 81799,
+            "quotedCost": "$951.97"
+        },
+        {
+            "requestID": "r100",
+            "serviceType": "Carpentry",
+            "jobDescription": "Window & Curtain",
+            "address": 90546,
+            "quotedCost": "$242.04"
+        }
+    ]
 }
